@@ -1,0 +1,23 @@
+{
+  "pattern_question": [
+      [{"LEMMA": {"IN": ["be", "do", "what", "when", "which", "where", "who", "why", "what", "how", "can"]}}, {"POS": "AUX"}],
+      [{"LEMMA": {"IN": ["be", "do", "what", "when", "which", "where", "who", "why", "what", "how", "can"]}}, {"POS": "PRON"}]
+      ],
+  
+  "pattern_request": [
+      [{"LEMMA": {"IN": ["tell", "ask", "inform"]}}, {"POS": "PRON"}, {"POS": "ADP"}],
+      [{"LEMMA": {"IN": ["tell", "ask", "inform"]}}, {"POS": "PRON"}, {"POS": "PRON"}],
+      [{"LEMMA": {"IN": ["tell", "ask", "inform"]}}, {"POS": "PRON"}, {"POS": "SCONJ"}]
+      ],
+  
+  "pattern_target": [
+      [{"DEP": "poss", "OP": "+"}, {"POS": "NOUN"}],
+      [{"POS": "PRON", "DEP": "nsubj", "IS_STOP": true}]
+      ],
+  
+  "pattern_action": [
+      [{"POS": "VERB", "DEP": "ROOT"}],
+      [{"POS": "AUX", "DEP": "ROOT",  "IS_STOP": true}],
+      [{"POS": "VERB"}, {"POS": "ADV"}]
+      ]
+}

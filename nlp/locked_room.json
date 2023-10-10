@@ -1,0 +1,18 @@
+{
+  "question" : {
+    "You are in a brightly lit room": ["where am I?"],
+    "The light is on": ["Why is the room so bright?"],
+    "You ran the \"main.py\" file": ["how did I get here?"],
+    "You need to ask the right questions and then say what you are going to do": ["how do I get out?"],
+    "Their are four walls. Each wall has a different colored door. In the centre of the room is a table with a box on top of it": ["What can you tell me about the room?"],
+    "There is a black, green, red and white door": ["What color are the doors?"],
+    "All of the doors appears to be locked": ["What can you tell me about the doors?"],
+    "The black door is locked and has no key-hole": ["What can you tell me about the black door?"],
+    "The green door is locked and has two key-holes": ["What can you tell me about the green door?"],
+    "The red door appears to be jammed from the other side": ["What can you tell me about the red door?"],
+    "The white door is locked and has one key-hole": ["What can you tell me about the white door?"],
+    "There is one key inside the box": ["What is in the box?"],
+    "There is nothing else on the table": ["What else is on the table?"],
+    "The key is green": ["What can you tell me about the key?"]
+  }
+}
