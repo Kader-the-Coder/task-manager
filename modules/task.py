@@ -3,7 +3,7 @@ This module defines all classes in task_manager.py.
 Requires dates.py to be in the same directory to function.
 '''
 
-from dates import date_overdue
+from modules.dates import date_overdue
 
 
 class Task():

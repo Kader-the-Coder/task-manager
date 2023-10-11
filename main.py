@@ -1,23 +1,6 @@
 '''Task Manager Program.'''
 
 #=============================Comments=================================
-# Intentional Deviations from Task instruction:
-
-# Task instructs that "if the user chooses to edit a task, the username
-# of the person to whom the task is assigned or the due date of the task
-# can be edited." This is something that only an admin should be able to
-# do and have therefore implemented this instruction in the VA option as
-# opposed to the VM option. Please allow for a resubmit if this will
-# negatively effect my score, stating it in the review feedback and
-# giving an explanation as to why the user should have that option.
-# Currently, non-admin users can only change whether or not a task that
-# has been assigned to them has been completed.
-
-# Task instructs user to input "-1" to return to main menu which is
-# inconsistent with the existing theme of pressing 'm' to return to
-# main menu. Therefore, "m" returns to main menu.
-
-# Apologies for the inconvenience
 
 # Disable annoying pylint messages:
 # pylint: disable=invalid-name
@@ -28,10 +11,10 @@
 #region This section includes all libraries imported into the program
 
 import os
-from display import clear_lines, print_wrap, print_columns, print_border
-from dates import get_date, input_date
-from task import Task
-from user import User
+from modules.display import clear_lines, print_wrap, print_columns, print_border
+from modules.dates import get_date, input_date
+from modules.task import Task
+from modules.user import User
 
 #endregion
 #=============================Constants================================
@@ -39,10 +22,10 @@ from user import User
 
 PROGRAM_NAME = "\033[1mHYPERION TASK MANAGER LTD.\033[0m"
 DIRECTORY = os.path.dirname(__file__)
-USER_TXT = os.path.join(DIRECTORY, "user.txt")
-TASKS_TXT = os.path.join(DIRECTORY, "tasks.txt")
-TASK_OVERVIEW_TXT = os.path.join(DIRECTORY, "task_overview.txt")
-USER_OVERVIEW_TXT = os.path.join(DIRECTORY, "user_overview.txt")
+USER_TXT = os.path.join(DIRECTORY, "data/user.txt")
+TASKS_TXT = os.path.join(DIRECTORY, "data/tasks.txt")
+TASK_OVERVIEW_TXT = os.path.join(DIRECTORY, "data/task_overview.txt")
+USER_OVERVIEW_TXT = os.path.join(DIRECTORY, "data/user_overview.txt")
 
 #endregion
 #==========================Initialize lists============================
